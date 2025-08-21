@@ -9,12 +9,20 @@
   <body>
     <div class="container">
       <div class="calc">
+       <div class="icon">
+        <img src="calculate_46dp_BLACK_FILL0_wght400_GRAD0_opsz48.svg">
+       </div>
         <h1>Calculadora</h1>
         <input id="num1" type="number" placeholder="Digite um número"/>
         <input id="num2" type="number" placeholder="Digite um número"/>
-        <button onclick="calc()">Somar</button>
+        <div class="buttons">
+          <button id="add" onclick="calc('+')">+</button>
+          <button id="sub" onclick="calc('-')">-</button>
+          <button id="multi" onclick="calc('*')">*</button>
+          <button id="divs" onclick="calc('/')">/</button>
+        </div>
         <input id="output" type="text" readonly />
-      </div>
+        </div>
       <div class="history">
       </div>
     </div>
