@@ -10,9 +10,11 @@
     <div class="container">
       <div class="calc">
        <div class="icon">
-        <img src="calculate_46dp_BLACK_FILL0_wght400_GRAD0_opsz48.svg">
+        <object data="calculate_48.svg" type="image/svg+xml"></object>
        </div>
-        <h1>Calculadora</h1>
+        <div class="calc-title"> 
+          Calculadora
+        </div>
         <input id="num1" type="number" placeholder="Digite um número"/>
         <input id="num2" type="number" placeholder="Digite um número"/>
         <div class="buttons">
@@ -23,9 +25,18 @@
         </div>
         <input id="output" type="text" readonly />
         </div>
-      <div class="history">
+          <div class="history">
+            <div class="history-title">
+                <h1>Histórico:</h1>
+            </div>
+            <div class="last-operations">
+                <small>10 últimas operações</small>
+              <div id="history">
+                
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
     <script src="javascript.js"></script>
   </body>
 </html>
